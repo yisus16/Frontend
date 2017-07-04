@@ -1,0 +1,92 @@
+html,body{
+	margin: 0px;
+	font-family: Roboto, Arial, Helvetica;
+}
+
+.main-container{
+	white-space: nowrap;
+	position: relative;
+	left: -300px;
+	transition: left 0.5s cubic-bezier(0.75, 0.82, 0.165, 1);
+}
+
+.overflow-control{
+	overflow-x: hidden;
+}
+
+.main-container.open{
+	left:0px;
+}
+
+.nav .btn-nav{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.main-container *{
+	white-space: normal;
+}
+
+.main-container .content, .main-container .lateral-menu{
+	display: inline-block;
+	margin-right: -4px;
+	vertical-align: top;
+	height: 100vh;
+}
+
+.main-container .lateral-menu li{
+	font-size: 32px;
+	padding: 8px 15px;
+	list-style-type: none; 
+	border-bottom: solid 2px #eee;
+}
+
+.main-container .lateral-menu{
+	width: 300px;
+	background-color: #222;
+	color: white;
+	text-align: center;
+}
+
+.main-container .content{
+	overflow-y: scroll;
+	overflow-x: hidden;
+	width: 100%;
+}
+
+.hero-image{
+	height: 75vh;					/* VH -> es el tamaño de la pantala como en porcentaje -> 75% */
+	background: url('food.jpeg');	/* Agregar la imagen de fondo */
+	background-size: cover;			/* Mantener el tamaño de la imagen con mayor efecto resoponsivo */	
+	background-position: center;	/* Centrar la imagen cuando la ventana o resolucion se este minimizando o maximizando */
+	padding: 1px;					/* Poner una cantidad minima o cualquier valor minimo para quitar la parte superior de la seccion */
+	color: white;					/* Letras Color Blanco */
+	text-shadow: 0px 0px 4px #000;	/* Sombras en el texto */
+	display: flex;					/* Mostrar en en la parte inferior  */
+	align-items: flex-end;			/* Mostrar al final de la seccion  */
+	padding-bottom: 5%;				/* Expandir en la parte inferior de la imagen */
+}
+
+.hero-image h1{
+	font-size: 72px;
+	margin: 0px;
+	text-shadow: 0px 0px 4px #000;
+}
+
+.hero-image p{
+	font-size: 24px;
+	text-shadow: 0px 0px 4px #000;
+}
+
+.nav{
+	background-color: #d95b43;
+	color: white;
+	width: 100%;
+	padding: 10px;
+}
+
+.nav li{
+	display: inline-block;
+	margin-right: 1em;
+	padding: 10px;
+}
